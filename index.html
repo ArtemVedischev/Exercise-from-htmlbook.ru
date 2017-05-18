@@ -1,9 +1,230 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>First</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>HELLO WORLD!</h1>
-<p>kasdjasljdlksadlsajdklsajfkl asfknslafjasklfj askdnsakjdajd asldasl;kd </p>
+  <form action="#">
+<!--__________________-->
+    <section class="block1">
+      <fieldset>
+        <legend  class="rounded"><span>Описание</span></legend>
+          <div class="field">
+            <label for="name">Название</label><input type="text" name="name">
+          </div>
+          <div class="field">
+            <label for="alt-name">Альтернативное название</label><input type="text" name="altname">
+          </div>
+          <div class="field">
+            <label for="instruction">Краткое описание:</label><textarea name="instruction" id="instruction" rows="8" cols="80"></textarea>
+          </div>
+          <div class="field">
+            <label for="manual">Альтернативные названия (через запятую):</label><textarea name="manual" id="manual" cols="80" rows="8"></textarea>
+          </div>
+      </fieldset>
+      <div class="sidebar1">
+        <span>
+          <h1>о вкусах не спорят</h1>
+          <p>Выбери свой напиток</p>
+        </span>
+        <img src="Glasses.png" alt="">
+      </div>
+  </section>
+<!--_______________-->
+  <section class="block2">
+    <fieldset>
+        <legend class="rounded"><span>Ингридиенты</span></legend>
+          <ul class="column1">
+            <label for="name">Название:</label>
+            <li>
+              <select name="name1" id="name">
+                <option value="one">Bitter Lemon</option>
+                <option value="two">Mint</option>
+                <option value="three">Paper</option>
+                <option value="four">Tomato</option>
+                <option value="five">Warer</option>
+              </select>
+            </li>
+            <li>
+              <select name="name2">
+                <option value="one">Bitter Lemon</option>
+                <option value="two">Mint</option>
+                <option value="three">Paper</option>
+                <option value="four">Tomato</option>
+                <option value="five">Warer</option>
+              </select>
+            </li>
+            <li>
+              <select name="name3">
+                <option value="one">Bitter Lemon</option>
+                <option value="two">Mint</option>
+                <option value="three">Paper</option>
+                <option value="four">Tomato</option>
+                <option value="five">Warer</option>
+              </select>
+            </li>
+            <li>
+              <select name="name4">
+                <option value="one">Bitter Lemon</option>
+                <option value="two">Mint</option>
+                <option value="three">Paper</option>
+                <option value="four">Tomato</option>
+                <option value="five">Warer</option>
+              </select>
+            </li>
+            <li>
+              <select name="name5">
+                <option value="one">Bitter Lemon</option>
+                <option value="two">Mint</option>
+                <option value="three">Paper</option>
+                <option value="four">Tomato</option>
+                <option value="five">Warer</option>
+              </select>
+            </li>
+          </ul>
+          <ul class="column2">
+            <label for="kolvo">Кол-во:</label>
+            <li><input type="text" value="1" id="kolvo"></li>
+            <li><input type="text" value="2"></li>
+            <li><input type="text"></li>
+            <li><input type="text"></li>
+            <li><input type="text"></li>
+          </ul>
+          <ul class="column3">
+            <label for="type">Единица:</label>
+            <li><select name="type" id="type">
+                <option value="1">Glass</option>
+                <option value="2">Cup</option>
+                <option value="3">Tank</option>
+              </select></li>
+            <li><select name="type">
+              <option value="1">Glass</option>
+              <option value="2">Cup</option>
+              <option value="3">Tank</option>
+              </select></li>
+            <li><select name="type">
+              <option value="1">Glass</option>
+              <option value="2">Cup</option>
+              <option value="3">Tank</option>
+              </select></li>
+            <li><select name="type">
+              <option value="1">Glass</option>
+              <option value="2">Cup</option>
+              <option value="3">Tank</option>
+              </select></li>
+            <li><select name="type">
+              <option value="1">Glass</option>
+              <option value="2">Cup</option>
+              <option value="3">Tank</option>
+              </select></li>
+          </ul>
+          <ul class="column4">
+            <caption>Украшения:</caption>
+            <li><input type="checkbox"></li>
+            <li><input type="checkbox"></li>
+            <li><input type="checkbox"></li>
+            <li><input type="checkbox"></li>
+            <li><input type="checkbox"></li>
+          </ul>
+      </fieldset>
+  </section>
+<!--_____________________________-->
+<section class="block3">
+  <fieldset>
+    <legend   class="rounded"><span>Параметры</span></legend>
+    <label for="kolvo-drink">Количество порций</label>
+    <select id="kolvo-drink">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <label for="time-product">Время приготовления</label>
+    <select id="time-product">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <label for="dific">Сложность</label>
+    <select id="dific">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <label for="method">Метод</label>
+    <select id="method">
+      <option value="1">В бокале</option>
+      <option value="2">В шейкере</option>
+      <option value="3">В ведре</option>
+    </select>
+  </fieldset>
+</section>
+<!--__________________________________-->
+<div class="foto-block block4">
+    <div class="foto">Фотография</div>
+    <img src="orange-glass.png">
+    <a href="#">Щелкните, чтобы посмотреть в полный размер</a>
+    <div class="line"></div>
+    <input type="button" value="загрузить">
+</div>
+<!--__________________________________-->
+<section class="block5">
+  <legend class="square"><span>Тип коктеля</span></legend>
+    <p class="label1">По-крепости:</p>
+    <fieldset>
+      <div class="field">
+        <input type="radio" id="drink1" name="drink"><span class="circle green"></span><label for="drink1">Безалкогольный</label>
+      </div>
+      <div class="field">
+        <input type="radio" id="drink2" name="drink"><span class="circle yellow"></span><label for="drink2" name="drink">Слабоалкогольный (6-15%)</label>
+      </div>
+      <div class="field">
+        <input type="radio" id="drink3" name="drink"><span class="circle orange"></span><label for="drink3" name="orange">Полукрепкие (16-22%)</label>
+      </div>
+      <div class="field">
+        <input type="radio" id="drink4" name="drink"><span class="circle red"></span><label for="drink4" name="red">Крепкие (22-40%)</label>
+      </div>
+  </fieldset>
+</section>
+<section class="block6">
+    <p class="label2">На основе:</p>
+    <fieldset>
+      <section>
+          <label for="alco1">Абсента</label>
+          <input type="radio" name="type-alco" id="alco1">
+          <label for="alco2">Водки</label>
+          <input type="radio" name="type-alco"  id="alco2">
+          <label for="alco3">Джина</label>
+          <input type="radio" name="type-alco" id="alco3">
+          <label for=alco4"">Виски</label>
+          <input type="radio" name="type-alco" id="alco4">
+          <label for="alco5">Бренди</label>
+          <input type="radio"  name="type-alco" id="alco5">
+          <label for="alco6">Кальвадоса</label>
+          <input type="radio" name="type-alco" id="alco6">
+          <label for="alco7">Текилы</label>
+          <input type="radio" name="type-alco" id="alco7">
+          <label for="alco8">Рома</label>
+          <input type="radio" name="type-alco" id="alco8">
+          <label for="alco9">Вина</label>
+          <input type="radio" name="type-alco" id="alco9">
+          <label for="alco10">Пива</label>
+          <input type="radio" name="type-alco" id="alco10">
+          <label for="alco11">Ликера</label>
+          <input type="radio" name="type-alco" id="alco11">
+        </section>
+      </fieldset>
+        <section>
+          <div class="range">
+            <span class="before-range">←</span>
+            <input type="range" name="alco-sort">
+            <span class="after-range">→</span>
+          </div>
+        </section>
+</section>
 </body>
 </html>
+
