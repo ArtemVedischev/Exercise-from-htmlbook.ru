@@ -1,0 +1,269 @@
+body {font-size: 0.85em;}
+form {width: 1000px; margin: 0 auto;position: relative;}
+fieldset, .foto-block {
+  background: linear-gradient(#eee, #fff, #eee);
+  border: 0;
+  border-radius: 10px;
+  position: relative;
+}
+/*------LEGEND-----*/
+.rounded {
+  margin-left: 10px;
+  display: block;
+  padding: 0.1em 0.4em;
+  height: 18px;
+  width: 157px;
+  line-height: 18px;
+  border-radius: 18px;
+}
+.square {
+  display: block;
+  width: 145px;
+  height: 20px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+legend span {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+/*--------------FIRST BLOCK OF THE FORM--------------------------*/
+.block1 {
+  width: 50%;
+  display: block;
+  text-align: left;
+  border: 1px solid #0f0;
+}
+
+.block1 label, .block1 input {display: block; margin: 5px;}
+.block1 input[type='text'] {width: 35%;}
+.block1 textarea {width: 45%; height: 100px;}
+.block1 legend {
+  background: linear-gradient(#f7a005, #d15100);
+}
+.field {margin-left: 25px;}
+/*________________FIRST SIDEBAR (CAPTION+IMAGE)_______________*/
+.sidebar1 {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 500px;
+}
+.sidebar1 span {
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+}
+.sidebar1 h1 {
+  background: linear-gradient(135deg, #f3772c 20%, #ffc103 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+  text-transform: uppercase;}
+.sidebar1 p {
+  margin-top: -15px;
+  color: #f3772c;
+}
+.sidebar1 img {
+  margin-top: 10px;
+  margin-left: 100px;
+}
+/*---------------------SECOND BLOCK-------------------*/
+.block2 {width: 60%;margin-top: 10px;float: left;}
+.block2 ul, .block2 li  {padding: 0; margin: 0;display: inline-block;vertical-align: top;text-align: center;}
+.block2 li {list-style: none;height: 34px;}
+.block2 legend {
+  background: linear-gradient(#a8d904, #a8d904);
+}
+.column1 {width: 210px;}
+.column1 select {display: block;width: 180px;}
+.column2 {width: 50px;}
+.column2 label {text-align: left;}
+.column2 input[type="text"] {width: 30px;text-align: center;}
+.column3 {width: 210px;}
+.column3 select {display: block;width: 180px;}
+.column4 {width: 50px;}
+.column4 li {display: block;}
+.column1 select, .column2 input, .column3 select, .column4 input, .block3 select {
+  border-radius: 8px;
+  box-shadow: inner 0 0 1px 1px #ccc;
+}
+/*-------------------THIRD BLOCK ---------------------*/
+.block2, .block3 {display: inline-block;vertical-align: top;}
+.block3 {width: 38%;margin-top: 10px;margin-left: 20px;}
+.block3 legend {
+  background: linear-gradient(#44b9f4, #0879a9);
+}
+.block3 select {
+  width: 280px;
+  display: block;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+.block3 label {
+  margin-left: 25px;}
+/*----------------FOURth BLOCK ----------------------*/
+.block4 {
+  height: 80px;
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.foto {
+  width: 80px;
+  height: 20px;
+  background-color: #7d7d7d;
+  color: #fff;
+  border-radius: 0px;
+  text-align: center;
+  margin-top: 30px;
+  position: absolute;
+}
+.foto::before {
+  content: '';
+  position: absolute;
+  left: 80px;
+  top: 0px;
+  border-left: 10px solid #7d7d7d;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.block4 img {
+  margin-top: 5px;
+  margin-left: 140px;
+  box-shadow: 0 0 1px 1px #ccc;
+  border-radius: 5px;
+  float: left;
+}
+.block4 a {
+  color: #888;
+  margin-left: 20px;
+  position: relative;
+  line-height: 80px;
+}
+.block4 .line {
+  width: 400px;
+  height: 10px;
+  border-top: dotted 1px #aaa;
+  position: absolute;
+  top: 40px;
+  left: 500px;
+}
+.block4 input {
+  border-radius: 10px;
+  background: linear-gradient(#f5f5f5, #d7d7d7, #f5f5f5);
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+/*------------------BLOCK 5-----------*/
+.block5 .square {background: linear-gradient(#fb7d17, #c72807);}
+.block5 .square::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 65px;
+  border-top: solid 5px #c72807;
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent;
+}
+.label1 {position: relative;margin: 20px 0 0 20px;}
+.label1::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -8px;
+  width: 4px;
+  height: 16px;
+  background: linear-gradient(#e30613, #f2a13b);
+}
+.block5 fieldset {position: relative;padding-left: 15px;height: 66px;line-height: 66px;}
+.block5 label {margin-right: 80px;margin-left: 10px;}
+input[type="radio"] {position: relative;z-index: 4;}
+.field {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+}
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  top: 19px;
+  left: -1px;
+  position: absolute;
+  z-index: 2;
+}
+.green {
+  background-color: #4bab47;
+}
+.yellow {
+  background-color: #f5bf2e;
+}
+.orange {
+  background-color: #fc8200;
+}
+.red {
+  background-color: #f63e1a;
+}
+/*----------------------SIXTH BLOCK----------------------*/
+.block6 {position: relative;}
+.block6 fieldset {
+  background: linear-gradient(#eee, #fff);
+  border: 1px solid #cfcfcf;
+  border-radius:  10px 10px 0 0;
+  position: relative;
+}
+.label2 {position: relative;margin: 20px 0 0 20px;}
+.label2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -8px;
+  width: 4px;
+  height: 16px;
+  background: linear-gradient(#e30613, #f2a13b);
+}
+.block6 input[type="radio"] {
+  margin-right: 20px;
+}
+input[type="range"] {
+  width: 780px;
+  display: block;
+  margin: 0 auto;
+}
+.range {
+  margin: 0 auto;
+  padding-top: 4px;
+  width: 996px;
+  height: 25px;
+  position: relative;
+  background-color: #eee;
+}
+.before-range,
+.after-range {
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  color: #888;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+.before-range {left: 0;
+margin-left: 2px;}
+.after-range {right: 0;}
